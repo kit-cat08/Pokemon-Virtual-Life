@@ -14,7 +14,7 @@ Project Description:
 # Team Structure
 * Team Manager: Aidan Manzanares
 * Programming Lead: Cathy Vo
-* Quality Assurance Tester: Kolin Borden
+* Quality Assurance Tester: Kolion Borden
 * Technical Writer: Annabelle Phan
 
 # Bugs & Future Improvements
