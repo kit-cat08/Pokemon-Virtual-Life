@@ -1,3 +1,8 @@
+/*
+This class represents a Pikachu and has various attributes and methods to interact with it. It implements the Pokemon interface.
+@author Cathy Vo
+@version 12/5/2025
+ */
 public class Pikachu implements Pokemon{
     private int health;
     private int energy;
@@ -20,6 +25,9 @@ public class Pikachu implements Pokemon{
         age = 1;
         combatLvl = 1;
     }
+    /*
+    This method simulates an attack by the Pikachu, reducing its energy and increasing its combat level.
+     */
     public void attack() {
         System.out.println("Pikachu uses Thunderbolt!");
         energy -= 10;
@@ -31,6 +39,9 @@ public class Pikachu implements Pokemon{
             combatLvl = 100;
         }
     }
+    /*
+    This method simulates feeding the Pikachu, increasing its health and happiness.
+    */
     public void feed() {
         System.out.println("Pikachu is eating Berries!");
         health += 10;
@@ -42,6 +53,9 @@ public class Pikachu implements Pokemon{
             happiness = 100;
         }
     }
+    /*
+    This method displays the current information about the Pikachu.
+     */
     public void showInfo() {
         System.out.println("Pikachu Info:");
         System.out.println("Type: " + type);
@@ -50,6 +64,9 @@ public class Pikachu implements Pokemon{
         System.out.println("Happiness: " + happiness);
         System.out.println("Age: " + age + " years");
     }
+    /*
+    This method simulates training the Pikachu, increasing its combat level while reducing its energy and happiness.
+     */
     public void train() {
         System.out.println("Pikachu is training!");
         combatLvl += 5;
@@ -62,6 +79,9 @@ public class Pikachu implements Pokemon{
             happiness = 0;
         }
     }
+    /*
+    This method simulates the Pikachu sleeping, restoring its energy and happiness.
+     */
     public void sleep(){
         System.out.println("Pikachu is sleeping!");
         energy += 20;
@@ -73,6 +93,9 @@ public class Pikachu implements Pokemon{
             happiness = 100;
         }
     }
+    /*
+    This method simulates the Pikachu playing, increasing its happiness while reducing its energy.
+     */
     public void play(){
         System.out.println("Pikachu is playing!");
         happiness += 15;
