@@ -1,7 +1,7 @@
 /*
 This class represents a Pikachu and has various attributes and methods to interact with it. It implements the Pokemon interface.
 @author Cathy Vo
-@version 12/5/2025
+@version 12/9/2025
  */
 public class Pikachu implements Pokemon{
     private int health;
