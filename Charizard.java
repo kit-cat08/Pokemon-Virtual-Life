@@ -82,5 +82,7 @@ public void uniqueBehavior() {
     happiness += 20; 
     age += 1;     
 }
-
+public int getHealth() {
+    return health;
+}
 }
