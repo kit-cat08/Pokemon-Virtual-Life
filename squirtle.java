@@ -127,6 +127,52 @@ public class squirtle implements Pokemon {
             int damage = 40 * ((combatLvl + 1)/ 10);
             System.out.println("Squirtle used Water Gun! It dealt " + damage + " damage!"); 
         }
+    
+
+
+    /*
+    Getter and setter methods.
+    */
+    
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public void setEnergy(int energy) {
+        this.energy = energy;
+    }
+
+    public int getHappiness() {
+        return happiness;
+    }
+
+    public void setHappiness(int happiness) {
+        this.happiness = happiness;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getCombatLvl() {
+        return combatLvl;
+    }
+
+    public void setCombatLvl(int combatLvl) {
+        this.combatLvl = combatLvl;
+    }
 
 
 
