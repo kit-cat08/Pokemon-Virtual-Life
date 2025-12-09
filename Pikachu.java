@@ -107,6 +107,12 @@ public class Pikachu implements Pokemon{
             energy = 0;
         }
     }
+    /*
+    This method demonstrates Pikachu's unique behavior.
+     */
+    public void uniqueBehavior() {
+        System.out.println("Pikachu is using its unique ability: Static!");
+    }
 
 
 }
