@@ -83,7 +83,7 @@ public class squirtle {
         }
     }
     /*
-    This method simulates Squitle playing, increasing its happiness and reducing its energy. fadssa
+    This method simulates Squitle playing, increasing its happiness and reducing its energy. f
      */
     public void play(){
         System.out.println("Pikachu is playing!");
