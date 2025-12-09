@@ -5,4 +5,5 @@ interface Pokemon {
     public void train();
     public void sleep();
     public void play();
+    public void uniqueBehavior();
 }
