@@ -112,6 +112,8 @@ public class Pikachu implements Pokemon{
      */
     public void uniqueBehavior() {
         System.out.println("Pikachu is using its unique ability: Static!");
+        System.out.println("Anyone who touches Pikachu may get paralyzed!");
+
     }
 
 
