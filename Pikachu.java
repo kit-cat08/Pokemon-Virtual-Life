@@ -26,6 +26,12 @@ public class Pikachu implements Pokemon{
         combatLvl = 1;
     }
     /*
+    This method returns the health of the Pikachu.
+     */
+    public int getHealth(){
+        return health;
+    }
+    /*
     This method simulates an attack by the Pikachu, reducing its energy and increasing its combat level.
      */
     public void attack() {
