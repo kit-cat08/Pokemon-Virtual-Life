@@ -1,6 +1,5 @@
 
-
-public class Charizard {
+public class Charizard implements Pokemon {
 private String type = "Fire/Flying";
 private int age;
 private int health;
@@ -23,12 +22,58 @@ public Charizard() {
     age = 70;
 
 }
-//Method to make Charizard fly 
-public void fly(){
+//Interface methods
+public void attack(){
+    System.out.println("Charizard uses Flamethrower!");
+    energy -= 20;
+    combatLevel += 20;
+}
+public void feed(){
+    System.out.println("You feed Charizard a hearty meal.");
+    health += 20;
+    happiness += 20;
+    energy += 20;
+}
+
+public void showInfo() {
+    // Displays the current state of Charizard's attributes
+    System.out.println("Charizard Info:");
+    System.out.println("Type: " + type);
+    System.out.println("Age: " + age);
+    System.out.println("Health: " + health);
+    System.out.println("Happiness: " + happiness);
+    System.out.println("Energy: " + energy);
+    System.out.println("Combat Level: " + combatLevel);
+}
+
+public void train() {
+    // Simulates training Charizard to improve its combat skills
+    System.out.println("You train Charizard to improve its combat skills.");
+    combatLevel += 15;
+    energy -= 15;    
+    happiness += 10;  
+}
+
+public void sleep() {
+    // Simulates Charizard sleeping to restore energy and health
+    System.out.println("Charizard is sleeping to restore energy.");
+    energy += 30;    
+    health += 10; 
+}
+
+public void play() {
+    // Simulates playing with Charizard to increase happiness
+    System.out.println("You play with Charizard, jumping around and having fun!");
+    happiness += 25;
+    energy -= 10;    
+}
+
+public void uniqueBehavior() {
+    // Simulates Charizard's unique behavior of flying
     System.out.println("WHOOSH WHOOSH CHARRRRR! Charizard is flying!!!");
-    energy-=20;
-    happiness +=20;
-    age +=1;
+    energy -= 20;  
+    happiness += 20; 
+    age += 1;     
 }
 
 }
