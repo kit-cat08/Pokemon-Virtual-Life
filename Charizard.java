@@ -1,3 +1,10 @@
+/***
+ * Charizard class which implements the Pokemon interface.
+ * This class represents a Charizard Pokemon with attributes such as type, age, health, happiness, energy, and combat level.
+ * It includes methods to perform actions like attack, feed, showInfo, train, sleep, play, and a unique behavior of flying.
+ * Author: Annabelle Phan 
+ * Date: December 9, 2025
+ */
 
 public class Charizard implements Pokemon {
 private String type = "Fire/Flying";
