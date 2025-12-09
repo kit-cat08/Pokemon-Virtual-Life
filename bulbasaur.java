@@ -90,5 +90,7 @@ public void play() {
 public void uniqueBehavior() {
     System.out.println("Bulbasaur uses its Vine Whip to swing around!");
 }
+public int getHealth() {
+    return health;
 
 }
