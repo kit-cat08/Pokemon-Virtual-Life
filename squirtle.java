@@ -1,4 +1,11 @@
-public class squirtle {
+/*
+This class represents a Squirtle and implements the Pokemon interface to use various methods.
+@author Aidan Manzanares
+@version 12/9/2025
+ */
+
+
+public class squirtle implements Pokemon {
     private int health;
     private int energy;
     private int happiness;
@@ -23,6 +30,22 @@ public class squirtle {
         happiness = 100;
         age = 1;
         combatLvl = 1;
+    }
+
+    /*
+    Simulates Squirtle attacking and calculates damage based on level.
+    */
+
+    public void attack() {
+        System.out.println("Squirtle uses Tackle!");
+        energy -= 10;
+        combatLvl += 2;
+        if (energy < 0) {
+            energy = 0;
+        }
+        if (combatLvl > 100) {
+            combatLvl = 100;
+        }
     }
 
 
@@ -97,9 +120,24 @@ public class squirtle {
         }
     }
 
+        /*
+        Squirtle's unique behavior: Using Water Gun attack. Calculates damage based on combat level.
+        */
+        public void uniqueBehavior(){
+            int damage = 40 * ((combatLvl + 1)/ 10);
+            System.out.println("Squirtle used Water Gun! It dealt " + damage + " damage!"); 
+        }
 
 
 
 
-}
+
+
+    }
+
+
+
+
+
+
 
