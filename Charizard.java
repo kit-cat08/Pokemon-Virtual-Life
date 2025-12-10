@@ -30,18 +30,20 @@ public Charizard() {
 
 }
 //Interface methods
+@Override
 public void attack(){
     System.out.println("Charizard uses Flamethrower!");
     energy -= 20;
     combatLevel += 20;
 }
+@Override
 public void feed(){
     System.out.println("You feed Charizard a hearty meal.");
     health += 20;
     happiness += 20;
     energy += 20;
 }
-
+@Override
 public void showInfo() {
     // Displays the current state of Charizard's attributes
     System.out.println("Charizard Info:");
@@ -52,7 +54,7 @@ public void showInfo() {
     System.out.println("Energy: " + energy);
     System.out.println("Combat Level: " + combatLevel);
 }
-
+@Override
 public void train() {
     // Simulates training Charizard to improve its combat skills
     System.out.println("You train Charizard to improve its combat skills.");
@@ -60,21 +62,21 @@ public void train() {
     energy -= 15;    
     happiness += 10;  
 }
-
+@Override
 public void sleep() {
     // Simulates Charizard sleeping to restore energy and health
     System.out.println("Charizard is sleeping to restore energy.");
     energy += 30;    
     health += 10; 
 }
-
+@Override
 public void play() {
     // Simulates playing with Charizard to increase happiness
     System.out.println("You play with Charizard, jumping around and having fun!");
     happiness += 25;
     energy -= 10;    
 }
-
+@Override
 public void uniqueBehavior() {
     // Simulates Charizard's unique behavior of flying
     System.out.println("WHOOSH WHOOSH CHARRRRR! Charizard is flying!!!");
