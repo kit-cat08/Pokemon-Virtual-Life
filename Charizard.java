@@ -84,7 +84,50 @@ public void uniqueBehavior() {
     happiness += 20; 
     age += 1;     
 }
+
+// Getter and Setter for 'age'
+public int getAge() {
+    return age;
+}
+
+public void setAge(int age) {
+    this.age = age;
+}
+
+// Getter and Setter for 'health'
 public int getHealth() {
     return health;
 }
+
+public void setHealth(int health) {
+    this.health = health;
+}
+
+// Getter and Setter for 'happiness'
+public int getHappiness() {
+    return happiness;
+}
+
+public void setHappiness(int happiness) {
+    this.happiness = happiness;
+}
+
+// Getter and Setter for 'energy'
+public int getEnergy() {
+    return energy;
+}
+
+public void setEnergy(int energy) {
+    this.energy = energy;
+}
+
+// Getter and Setter for 'combatLevel'
+public int getCombatLevel() {
+    return combatLevel;
+}
+
+public void setCombatLevel(int combatLevel) {
+    this.combatLevel = combatLevel;
+}
+
 }
