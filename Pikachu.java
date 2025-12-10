@@ -32,8 +32,63 @@ public class Pikachu implements Pokemon{
         return health;
     }
     /*
+    This method sets the health of the Pikachu.
+     */
+    public void setHealth(int health) {
+        this.health = health;
+    }
+    /*
+    This method returns the happinessof the Pikachu.
+     */
+    public int getHappiness() {
+        return happiness;
+    }
+    /*
+    This method sets the happiness of the Pikachu.
+     */
+    public void setHappiness(int happiness) {
+        this.happiness = happiness;
+    }
+    /*
+    These method returns the energy of the Pikachu.
+     */
+    public int getEnergy() {
+        return energy;
+    }
+    /*
+    This method sets the energy of the Pikachu.
+     */
+    public void setEnergy(int energy) {
+        this.energy = energy;
+    }
+    /*
+    These method returns the age of the Pikachu.
+     */
+    public int getAge() {
+        return age;
+    }
+    /*
+    This method sets the age of the Pikachu.
+    */
+    public void setAge(int age) {
+        this.age = age;
+    }
+    /*
+    This method returns the combat level of the Pikachu.
+     */
+    public int getCombatLvl() {
+        return combatLvl;
+    }
+    /*
+    This method sets the combat level of the Pikachu.
+     */
+    public void setCombatLvl(int combatLvl) {
+        this.combatLvl = combatLvl;
+    }
+    /*
     This method simulates an attack by the Pikachu, reducing its energy and increasing its combat level.
      */
+    @Override
     public void attack() {
         System.out.println("Pikachu uses Thunderbolt!");
         energy -= 10;
@@ -48,6 +103,7 @@ public class Pikachu implements Pokemon{
     /*
     This method simulates feeding the Pikachu, increasing its health and happiness.
     */
+    @Override
     public void feed() {
         System.out.println("Pikachu is eating Berries!");
         health += 10;
@@ -62,6 +118,7 @@ public class Pikachu implements Pokemon{
     /*
     This method displays the current information about the Pikachu.
      */
+    @Override
     public void showInfo() {
         System.out.println("Pikachu Info:");
         System.out.println("Type: " + type);
@@ -73,6 +130,7 @@ public class Pikachu implements Pokemon{
     /*
     This method simulates training the Pikachu, increasing its combat level while reducing its energy and happiness.
      */
+    @Override
     public void train() {
         System.out.println("Pikachu is training!");
         combatLvl += 5;
@@ -88,6 +146,7 @@ public class Pikachu implements Pokemon{
     /*
     This method simulates the Pikachu sleeping, restoring its energy and happiness.
      */
+    @Override
     public void sleep(){
         System.out.println("Pikachu is sleeping!");
         energy += 20;
@@ -102,6 +161,7 @@ public class Pikachu implements Pokemon{
     /*
     This method simulates the Pikachu playing, increasing its happiness while reducing its energy.
      */
+    @Override
     public void play(){
         System.out.println("Pikachu is playing!");
         happiness += 15;
@@ -116,11 +176,15 @@ public class Pikachu implements Pokemon{
     /*
     This method demonstrates Pikachu's unique behavior.
      */
-    public void uniqueBehavior() {
+    
+    @Override
+    public void uniqueBehavior(){ 
         System.out.println("Pikachu is using its unique ability: Static!");
         System.out.println("Anyone who touches Pikachu may get paralyzed!");
 
     }
+
+   
 
 
 }
