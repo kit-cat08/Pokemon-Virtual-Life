@@ -40,12 +40,7 @@ public class squirtle implements Pokemon {
         System.out.println("Squirtle uses Tackle!");
         energy -= 10;
         combatLvl += 2;
-        if (energy < 0) {
-            energy = 0;
-        }
-        if (combatLvl > 100) {
-            combatLvl = 100;
-        }
+
     }
 
 
@@ -58,12 +53,6 @@ public class squirtle implements Pokemon {
         System.out.println("Squirtle is eating Berries!");
         health += 10;
         happiness += 5;
-        if (health > 100) {
-            health = 100;
-        }
-        if (happiness > 100) {
-            happiness = 100;
-        }
     }
     /*
     This method displays the current information about the Squirtle.
@@ -86,12 +75,7 @@ public class squirtle implements Pokemon {
         combatLvl += 5;
         energy -= 15;
         happiness -= 5;
-        if (energy < 0) {
-            energy = 0;
-        }
-        if (happiness < 0) {
-            happiness = 0;
-        }
+
     }
     /*
     This method simulates Squirtle sleeping, restoring energy and happiness.
@@ -101,12 +85,7 @@ public class squirtle implements Pokemon {
         System.out.println("Pikachu is sleeping!");
         energy += 20;
         happiness += 10;
-        if (energy > 100) {
-            energy = 100;
-        }
-        if (happiness > 100) {
-            happiness = 100;
-        }
+
     }
     /*
     This method simulates Squitle playing, increasing its happiness and reducing its energy. f
