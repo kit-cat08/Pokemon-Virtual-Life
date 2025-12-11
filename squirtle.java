@@ -35,7 +35,7 @@ public class squirtle implements Pokemon {
     /*
     Simulates Squirtle attacking and calculates damage based on level.
     */
-
+    @Override
     public void attack() {
         System.out.println("Squirtle uses Tackle!");
         energy -= 10;
@@ -53,7 +53,7 @@ public class squirtle implements Pokemon {
     Method for feeding Squirtle and increasing health and happiness.
     
     */
-
+    @Override
     public void feed() {
         System.out.println("Squirtle is eating Berries!");
         health += 10;
@@ -68,6 +68,7 @@ public class squirtle implements Pokemon {
     /*
     This method displays the current information about the Squirtle.
      */
+    @Override
     public void showInfo() {
         System.out.println("Squirtle Info:");
         System.out.println("Type: " + type);
@@ -79,6 +80,7 @@ public class squirtle implements Pokemon {
     /*
     This method simulates training Squirtle, increasing its combat level and reducing its energy and happiness.
      */
+    @Override
     public void train() {
         System.out.println("Pikachu is training!");
         combatLvl += 5;
@@ -94,6 +96,7 @@ public class squirtle implements Pokemon {
     /*
     This method simulates Squirtle sleeping, restoring energy and happiness.
      */
+    @Override
     public void sleep(){
         System.out.println("Pikachu is sleeping!");
         energy += 20;
@@ -108,21 +111,18 @@ public class squirtle implements Pokemon {
     /*
     This method simulates Squitle playing, increasing its happiness and reducing its energy. f
      */
+    @Override
     public void play(){
         System.out.println("Pikachu is playing!");
         happiness += 15;
         energy -= 10;
-        if (happiness > 100) {
-            happiness = 100;
-        }
-        if (energy < 0) {
-            energy = 0;
-        }
+        
     }
 
         /*
         Squirtle's unique behavior: Using Water Gun attack. Calculates damage based on combat level.
         */
+        @Override
         public void uniqueBehavior(){
             int damage = 40 * ((combatLvl + 1)/ 10);
             System.out.println("Squirtle used Water Gun! It dealt " + damage + " damage!"); 
