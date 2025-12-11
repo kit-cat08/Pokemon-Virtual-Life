@@ -10,6 +10,33 @@ private int happiness;
 private int age;
 private int energy;
 private int combatLevel;
+public void setHealth(int health) {
+    this.health = health;
+}
+public int getHappiness() {
+    return happiness;
+}
+public void setHappiness(int happiness) {
+    this.happiness = happiness;
+}
+public int getAge() {
+    return age;
+}
+public void setAge(int age) {
+    this.age = age;
+}
+public int getEnergy() {
+    return energy;
+}
+public void setEnergy(int energy) {
+    this.energy = energy;
+}
+public int getCombatLevel() {
+    return combatLevel;
+}
+public void setCombatLevel(int combatLevel) {
+    this.combatLevel = combatLevel;
+}
 //constructor
 public bulbasaur(int health, int happiness, int age, int energy, int combatLevel) {
     this.health = health;
@@ -26,28 +53,22 @@ public bulbasaur() {
     this.combatLevel = 1;
 }
 //display attack message, reduce energy, increase combat level
+@Override
 public void attack() {
     System.out.println("Bulbasaur uses Vine Whip!");
     energy -= 10;
     combatLevel += 1;
-    if (energy < 0) {
-        energy = 0;
-    }
 
 }
 //feed method to increase health and happiness
+@Override
 public void feed() {
     System.out.println("Bulbasaur is eating some berries.");
     health += 10;
     happiness += 5;
-    if (health > 100) {
-        health = 100;
-    }
-    if (happiness > 100) {
-        happiness = 100;
-    }
 }
 //showInfo method to display current stats
+@Override
 public void showInfo() {
     System.out.println("Bulbasaur Info:");
     System.out.println("Type: " + type);
@@ -58,39 +79,32 @@ public void showInfo() {
     System.out.println("Combat Level: " + combatLevel);
 }
 //train method to increase combat level and reduce energy
+@Override
 public void train() {
     System.out.println("Training Bulbasaur...");
     combatLevel += 2;
     energy -= 15;
-    if (energy < 0) {
-        energy = 0;
-    }
 }
 //sleep method to restore energy
+@Override
 public void sleep() {
     System.out.println("Bulbasaur is sleeping.");
     energy += 20;
-    if (energy > 100) {
-        energy = 100;
-    }
 }
 //play method to increase happiness and reduce energy
+@Override
 public void play() {
     System.out.println("Playing with Bulbasaur.");
     happiness += 10;
     energy -= 5;
-    if (happiness > 100) {
-        happiness = 100;
-    }
-    if (energy < 0) {
-        energy = 0;
-    }
 }
 //unique behavior method
+@Override
 public void uniqueBehavior() {
     System.out.println("Bulbasaur uses its Vine Whip to swing around!");
 }
 public int getHealth() {
     return health;
 
+}
 }

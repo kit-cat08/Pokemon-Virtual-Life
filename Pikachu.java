@@ -123,7 +123,7 @@ public class Pikachu implements Pokemon{
         System.out.println("Pikachu is training!");
         combatLvl += 5;
         energy -= 15;
-        happiness -= 5
+        happiness -= 5;
     }
     /*
     This method simulates the Pikachu sleeping, restoring its energy and happiness.
