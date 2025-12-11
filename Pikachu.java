@@ -93,12 +93,6 @@ public class Pikachu implements Pokemon{
         System.out.println("Pikachu uses Thunderbolt!");
         energy -= 10;
         combatLvl += 2;
-        if (energy < 0) {
-            energy = 0;
-        }
-        if (combatLvl > 100) {
-            combatLvl = 100;
-        }
     }
     /*
     This method simulates feeding the Pikachu, increasing its health and happiness.
@@ -108,12 +102,6 @@ public class Pikachu implements Pokemon{
         System.out.println("Pikachu is eating Berries!");
         health += 10;
         happiness += 5;
-        if (health > 100) {
-            health = 100;
-        }
-        if (happiness > 100) {
-            happiness = 100;
-        }
     }
     /*
     This method displays the current information about the Pikachu.
@@ -135,13 +123,7 @@ public class Pikachu implements Pokemon{
         System.out.println("Pikachu is training!");
         combatLvl += 5;
         energy -= 15;
-        happiness -= 5;
-        if (energy < 0) {
-            energy = 0;
-        }
-        if (happiness < 0) {
-            happiness = 0;
-        }
+        happiness -= 5
     }
     /*
     This method simulates the Pikachu sleeping, restoring its energy and happiness.
@@ -151,12 +133,6 @@ public class Pikachu implements Pokemon{
         System.out.println("Pikachu is sleeping!");
         energy += 20;
         happiness += 10;
-        if (energy > 100) {
-            energy = 100;
-        }
-        if (happiness > 100) {
-            happiness = 100;
-        }
     }
     /*
     This method simulates the Pikachu playing, increasing its happiness while reducing its energy.
@@ -166,12 +142,6 @@ public class Pikachu implements Pokemon{
         System.out.println("Pikachu is playing!");
         happiness += 15;
         energy -= 10;
-        if (happiness > 100) {
-            happiness = 100;
-        }
-        if (energy < 0) {
-            energy = 0;
-        }
     }
     /*
     This method demonstrates Pikachu's unique behavior.
