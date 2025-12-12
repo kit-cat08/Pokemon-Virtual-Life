@@ -2,16 +2,28 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         boolean wantsToQuit = false;
+        
         System.out.println("Welcome to the Pokemon Simulator!");
+        
         System.out.println("Choose your pokemon: Pikachu, Bulbasaur, Squirtle, Charizard");
+
         String pokemonType = scanner.nextLine().toLowerCase();
+        
         Pokemon pet = createPokemon(pokemonType);
         while(isDead(pet) == false){
-            choosePokemonAction(pet, scanner, wantsToQuit);
-            randomEvent(pet);
-        }
-        System.out.println("Game Over! Your Pokemon has fainted.");
+            if (wantsToQuit){
+                break;
+            }
+            else{
+                choosePokemonAction(pet, scanner, wantsToQuit);
+                randomEvent(pet);
+                }
+            }
+            
+        
+        System.out.println("Game Over!");
         
         
     }
@@ -21,6 +33,7 @@ This method allows the user to choose the action for the Pokemon based on their 
 @param pokemon The Pokemon object 
 @param scanner The scanner for user input 
 @author Annabelle Phan 
+@collaborators Cathy Vo
 */
 public static void choosePokemonAction(Pokemon pokemon, Scanner scanner, boolean quit){
     System.out.println("Choose an action for your Pokemon: \nfeed \nsleep \ntrain \nplay \nunique Behavior \ninfo \nquit");
@@ -45,7 +58,6 @@ public static void choosePokemonAction(Pokemon pokemon, Scanner scanner, boolean
             pokemon.showInfo();
             break;
         case "quit":
-            System.out.println("Exiting the game. Goodbye!");
             quit = true;
             break;
         default:
