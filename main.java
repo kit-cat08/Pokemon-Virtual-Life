@@ -6,9 +6,12 @@ public class main {
         System.out.println("Choose your pokemon: Pikachu, Bulbasaur, Squirtle, Charizard");
         String pokemonType = scanner.nextLine().toLowerCase();
         Pokemon pet = createPokemon(pokemonType);
-
+        while(isDead(pet) == false){
+            choosePokemonAction(pet, scanner);
+            randomEvent(pet);
+        }
+        System.out.println("Game Over! Your Pokemon has fainted.");
         
-
         
     }
 
@@ -19,7 +22,7 @@ This method allows the user to choose the action for the Pokemon based on their 
 @author Annabelle Phan 
 */
 public static void choosePokemonAction(Pokemon pokemon, Scanner scanner){
-    System.out.println("Choose an action for your Pokemon: \nfeed \nsleep \ntrain \nplay \nunique Behavior \ninfo ");
+    System.out.println("Choose an action for your Pokemon: \nfeed \nsleep \ntrain \nplay \nunique Behavior \ninfo \nquit");
     String action = scanner.nextLine().toLowerCase();
     switch (action){
         case "feed":
@@ -39,6 +42,9 @@ public static void choosePokemonAction(Pokemon pokemon, Scanner scanner){
             break;
         case "show info":
             pokemon.showInfo();
+            break;
+        case "quit":
+            System.out.println("Exiting the game. Goodbye!");
             break;
         default:
             System.out.println("Invalid action. Please choose again.");
@@ -72,7 +78,7 @@ public static Pokemon createPokemon(String pokemonType){
 }
 
 /*
-Checks the Pokemon's health to see if the Pokemon is alive. 
+Checks the Pokemon's health, energy  to see if the Pokemon is alive. 
 @param pet The Pokemon object to check
 @return true if the Pokemon is dead, false otherwise
 @author Aidan Manzanares
@@ -80,11 +86,22 @@ Checks the Pokemon's health to see if the Pokemon is alive.
 
 public static boolean isDead(Pokemon pet){
         int health = pet.getHealth();
-        if (health <= 0){
+        int energy = pet.getEnergy();
+        int happiness = pet.getHappiness();
+
+        if (health <= 0 || energy <= 0 ){
             System.out.println("Your Pokemon has fainted!");
             return true;
         }
-        else if (health > 100){
+        else if (happiness <= 0){
+            System.out.println("Your Pokemon has run away due to unhappiness!");
+            return true;
+        }
+        else if (happiness > 100){
+            System.out.println("Your Pokemon has overexerted itself from excitement!");
+            return true;
+        }
+        else if (health > 100 || energy > 100){
             System.out.println("Your Pokemon has fainted from exertion!");
             return true;
         }
