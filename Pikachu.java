@@ -28,60 +28,70 @@ public class Pikachu implements Pokemon{
     /*
     This method returns the health of the Pikachu.
      */
+    @Override
     public int getHealth(){
         return health;
     }
     /*
     This method sets the health of the Pikachu.
      */
+    @Override
     public void setHealth(int health) {
         this.health = health;
     }
     /*
     This method returns the happinessof the Pikachu.
      */
+    @Override
     public int getHappiness() {
         return happiness;
     }
     /*
     This method sets the happiness of the Pikachu.
      */
+    @Override
     public void setHappiness(int happiness) {
         this.happiness = happiness;
     }
     /*
     These method returns the energy of the Pikachu.
      */
+    @Override
     public int getEnergy() {
         return energy;
     }
     /*
     This method sets the energy of the Pikachu.
      */
+    @Override
     public void setEnergy(int energy) {
         this.energy = energy;
     }
     /*
     These method returns the age of the Pikachu.
      */
+    @Override
     public int getAge() {
         return age;
     }
     /*
     This method sets the age of the Pikachu.
     */
+   @Override
     public void setAge(int age) {
         this.age = age;
     }
     /*
     This method returns the combat level of the Pikachu.
      */
+    @Override
     public int getCombatLvl() {
         return combatLvl;
     }
     /*
     This method sets the combat level of the Pikachu.
      */
+    @Override
     public void setCombatLvl(int combatLvl) {
         this.combatLvl = combatLvl;
     }

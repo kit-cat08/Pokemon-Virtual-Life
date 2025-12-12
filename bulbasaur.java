@@ -4,37 +4,46 @@
 *@version  12/9/2025
 */
 public class bulbasaur implements Pokemon {
-private String type = "Grass/Poison";
+private final String type = "Grass/Poison";
 private int health;
 private int happiness;
 private int age;
 private int energy;
 private int combatLevel;
+@Override
 public void setHealth(int health) {
     this.health = health;
 }
+@Override
 public int getHappiness() {
     return happiness;
 }
+@Override
 public void setHappiness(int happiness) {
     this.happiness = happiness;
 }
+@Override
 public int getAge() {
     return age;
 }
+@Override
 public void setAge(int age) {
     this.age = age;
 }
+@Override
 public int getEnergy() {
     return energy;
 }
+@Override
 public void setEnergy(int energy) {
     this.energy = energy;
 }
-public int getCombatLevel() {
+@Override
+public int getCombatLvl() {
     return combatLevel;
 }
-public void setCombatLevel(int combatLevel) {
+@Override
+public void setCombatLvl(int combatLevel) {
     this.combatLevel = combatLevel;
 }
 //constructor
@@ -103,6 +112,7 @@ public void play() {
 public void uniqueBehavior() {
     System.out.println("Bulbasaur uses its Vine Whip to swing around!");
 }
+@Override
 public int getHealth() {
     return health;
 

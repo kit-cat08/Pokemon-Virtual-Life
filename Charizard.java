@@ -7,7 +7,7 @@
  */
 
 public class Charizard implements Pokemon {
-private String type = "Fire/Flying";
+private final String type = "Fire/Flying";
 private int age;
 private int health;
 private int happiness; 
@@ -86,47 +86,52 @@ public void uniqueBehavior() {
 }
 
 // Getter and Setter for 'age'
+@Override
 public int getAge() {
     return age;
 }
 
+@Override
 public void setAge(int age) {
     this.age = age;
 }
-
+@Override
 // Getter and Setter for 'health'
 public int getHealth() {
     return health;
 }
-
+@Override
 public void setHealth(int health) {
     this.health = health;
 }
 
 // Getter and Setter for 'happiness'
+@Override
 public int getHappiness() {
     return happiness;
 }
-
+@Override
 public void setHappiness(int happiness) {
     this.happiness = happiness;
 }
 
 // Getter and Setter for 'energy'
+@Override
 public int getEnergy() {
     return energy;
 }
-
+@Override
 public void setEnergy(int energy) {
     this.energy = energy;
 }
 
 // Getter and Setter for 'combatLevel'
-public int getCombatLevel() {
+@Override
+public int getCombatLvl() {
     return combatLevel;
 }
-
-public void setCombatLevel(int combatLevel) {
+@Override
+public void setCombatLvl(int combatLevel) {
     this.combatLevel = combatLevel;
 }
 

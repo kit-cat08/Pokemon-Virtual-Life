@@ -112,43 +112,49 @@ public class squirtle implements Pokemon {
     /*
     Getter and setter methods.
     */
-    
+    @Override
     public int getHealth() {
         return health;
     }
-
+    @Override
     public void setHealth(int health) {
         this.health = health;
     }
-
+    @Override
     public int getEnergy() {
         return energy;
     }
-
+    @Override
     public void setEnergy(int energy) {
         this.energy = energy;
     }
 
+    @Override
     public int getHappiness() {
         return happiness;
     }
 
+@Override
     public void setHappiness(int happiness) {
         this.happiness = happiness;
     }
 
+    @Override
     public int getAge() {
         return age;
     }
 
+@Override
     public void setAge(int age) {
         this.age = age;
     }
 
+@Override
     public int getCombatLvl() {
         return combatLvl;
     }
 
+@Override
     public void setCombatLvl(int combatLvl) {
         this.combatLvl = combatLvl;
     }
