@@ -55,10 +55,10 @@ public bulbasaur(int health, int happiness, int age, int energy, int combatLevel
     this.combatLevel = combatLevel;
 }
 public bulbasaur() {
-    this.health = 100;
-    this.happiness = 100;
-    this.age = 0;
-    this.energy = 100;
+    this.health = 60;
+    this.happiness = 60;
+    this.age = 1;
+    this.energy = 60;
     this.combatLevel = 1;
 }
 //display attack message, reduce energy, increase combat level

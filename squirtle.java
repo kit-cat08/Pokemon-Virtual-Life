@@ -25,9 +25,9 @@ public class squirtle implements Pokemon {
         combatLvl = theCombatLvl;
     }
     public squirtle() {
-        health = 100;
-        energy = 100;
-        happiness = 100;
+        health = 50;
+        energy = 50;
+        happiness = 50;
         age = 1;
         combatLvl = 1;
     }

@@ -19,9 +19,9 @@ public class Pikachu implements Pokemon{
         combatLvl = theCombatLvl;
     }
     public Pikachu() {
-        health = 100;
-        energy = 100;
-        happiness = 100;
+        health = 60;
+        energy = 60;
+        happiness = 60;
         age = 1;
         combatLvl = 1;
     }

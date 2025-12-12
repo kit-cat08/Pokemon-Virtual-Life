@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class main {
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         boolean wantsToQuit = false;
-        
+
         System.out.println("Welcome to the Pokemon Simulator!");
         
         System.out.println("Choose your pokemon: Pikachu, Bulbasaur, Squirtle, Charizard");
@@ -21,11 +21,7 @@ public class main {
                 randomEvent(pet);
                 }
             }
-            
-        
-        System.out.println("Game Over!");
-        
-        
+        System.out.println("Game Over!"); 
     }
 
 /*
@@ -54,7 +50,7 @@ public static void choosePokemonAction(Pokemon pokemon, Scanner scanner, boolean
         case "unique behavior":
             pokemon.uniqueBehavior();
             break;
-        case "show info":
+        case "info":
             pokemon.showInfo();
             break;
         case "quit":
