@@ -2,8 +2,6 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        boolean wantsToQuit = false;
         
         System.out.println("Welcome to the Pokemon Simulator!");
         
@@ -13,16 +11,17 @@ public class main {
         
         Pokemon pet = createPokemon(pokemonType);
         while(isDead(pet) == false){
-            if (wantsToQuit){
+            System.out.println("Choose an action for your Pokemon: \n- feed \n- sleep \n- train \n- play \n- unique Behavior \n- show info \n- quit");
+            String action = scanner.nextLine().toLowerCase();
+            if (action.equals("quit"){
                 break;
             }
             else{
-                choosePokemonAction(pet, scanner, wantsToQuit);
+                choosePokemonAction(pet, scanner, action);
                 randomEvent(pet);
                 }
             }
             
-        
         System.out.println("Game Over!");
         
         
@@ -35,9 +34,7 @@ This method allows the user to choose the action for the Pokemon based on their 
 @author Annabelle Phan 
 @collaborators Cathy Vo
 */
-public static void choosePokemonAction(Pokemon pokemon, Scanner scanner, boolean quit){
-    System.out.println("Choose an action for your Pokemon: \nfeed \nsleep \ntrain \nplay \nunique Behavior \ninfo \nquit");
-    String action = scanner.nextLine().toLowerCase();
+public static void choosePokemonAction(Pokemon pokemon, Scanner scanner, String action){
     switch (action){
         case "feed":
             pokemon.feed();
@@ -57,13 +54,9 @@ public static void choosePokemonAction(Pokemon pokemon, Scanner scanner, boolean
         case "show info":
             pokemon.showInfo();
             break;
-        case "quit":
-            quit = true;
-            break;
         default:
             System.out.println("Invalid action. Please choose again.");
             break;
-
     
     }
 }
@@ -123,9 +116,6 @@ public static boolean isDead(Pokemon pet){
             return false;
         }
 }
-
-
-
 
 
 public static void randomEvent(Pokemon pokemon){
