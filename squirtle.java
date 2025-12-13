@@ -25,9 +25,9 @@ public class squirtle implements Pokemon {
         combatLvl = theCombatLvl;
     }
     public squirtle() {
-        health = 100;
-        energy = 100;
-        happiness = 100;
+        health = 60;
+        energy = 60;
+        happiness = 60;
         age = 1;
         combatLvl = 1;
     }
@@ -65,6 +65,7 @@ public class squirtle implements Pokemon {
         System.out.println("Energy: " + energy);
         System.out.println("Happiness: " + happiness);
         System.out.println("Age: " + age + " years");
+        System.out.println("Combat Level: " + combatLvl);
     }
     /*
     This method simulates training Squirtle, increasing its combat level and reducing its energy and happiness.
