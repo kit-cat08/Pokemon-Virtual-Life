@@ -55,7 +55,7 @@ public static void choosePokemonAction(Pokemon pokemon, Scanner scanner, String 
         case "unique behavior":
             pokemon.uniqueBehavior();
             break;
-        case "info":
+        case " show info":
             pokemon.showInfo();
             break;
         default:
