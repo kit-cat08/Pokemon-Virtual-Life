@@ -8,7 +8,10 @@ Project Description:
 The user will begin to run the program and choose their type of Pokémon pet they would like to take care of. Then they will pick from a list of options to interact with their pet. Random events will occur at random times. The user will be able to interact with their pet as long as it is still alive.
 
 # Overview of Program Features
-* Users can feed, train, 
+* Users can feed, train, put their Pokémon to sleep, play with their Pokémon, use their Pokémon's unique behavior, and display their Pokémon's data.
+* The program checks if their Pokémon is alive.
+* The program also makes random events occur.
+
 # Class Diagram
 * https://drive.google.com/file/d/1ghPg438CBFuYn4R6XsFTAtFQMhDF32kf/view?usp=sharing
 
