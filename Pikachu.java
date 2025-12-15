@@ -123,6 +123,7 @@ public class Pikachu implements Pokemon{
         System.out.println("Health: " + health);
         System.out.println("Energy: " + energy);
         System.out.println("Happiness: " + happiness);
+        System.out.println("Combat Level: " + combatlvl);
         System.out.println("Age: " + age + " years");
     }
     /*
