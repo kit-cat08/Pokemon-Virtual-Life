@@ -1,6 +1,14 @@
+/**
+ * Main class for the Pokemon Simulator game.
+ * Allows the user to play and interact with a chosen Pokemon.
+ * @author Cathy Vo, Kolion Borden, Aidan Manzanares, Annabelle Phan
+ * @version 12/15/2025
+ */
 import java.util.Scanner;
 public class main {
-    
+    /*
+    The main method to run the Pokemon Simulator game. Allows the user to choose a Pokemon and perform actions until the Pokemon dies or the user quits.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -121,7 +129,7 @@ public static boolean isDead(Pokemon pet){
 
 /*
 Simulates random events that effect the Pokemon's status variables.
-@param The Pokemon.
+@param The Pokemon that the user choose.
 @author Kolion Borden
 */
 
