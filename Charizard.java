@@ -23,8 +23,8 @@ public Charizard(int theHealth, int theHappiness, int theEnergy, int theCombatLe
 }
 public Charizard() {
     health = 60; // Default health
-    happiness = 50; // Default happiness
-    energy = 50; // Default energy
+    happiness = 60; // Default happiness
+    energy = 60; // Default energy
     combatLevel = 10; // Default combat level
     age = 70;
 
