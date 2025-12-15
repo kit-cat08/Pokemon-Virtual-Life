@@ -3,8 +3,6 @@ public class main {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        boolean wantsToQuit = false;
         
         System.out.println("Welcome to the Pokemon Simulator!");
         
@@ -55,7 +53,7 @@ public static void choosePokemonAction(Pokemon pokemon, Scanner scanner, String 
         case "unique behavior":
             pokemon.uniqueBehavior();
             break;
-        case " show info":
+        case "show info":
             pokemon.showInfo();
             break;
         default:
@@ -101,7 +99,7 @@ public static boolean isDead(Pokemon pet){
         int happiness = pet.getHappiness();
 
         if (health <= 0 || energy <= 0 ){
-            System.out.println("Your Pokemon has fainted!");
+            System.out.println("Your Pokemon has fainted and died!");
             return true;
         }
         else if (happiness <= 0){
@@ -113,7 +111,7 @@ public static boolean isDead(Pokemon pet){
             return true;
         }
         else if (health > 100 || energy > 100){
-            System.out.println("Your Pokemon has fainted from exertion!");
+            System.out.println("Your Pokemon has fainted and died from exertion!");
             return true;
         }
         else {
@@ -121,6 +119,11 @@ public static boolean isDead(Pokemon pet){
         }
 }
 
+/*
+Simulates random events that effect the Pokemon's status variables.
+@param The Pokemon.
+@author Kolion Borden
+*/
 
 public static void randomEvent(Pokemon pokemon){
     int event = (int)(Math.random() * 100);

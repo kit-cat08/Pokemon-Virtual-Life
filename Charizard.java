@@ -1,9 +1,9 @@
-/***
+/**
  * Charizard class which implements the Pokemon interface.
  * This class represents a Charizard Pokemon with attributes such as type, age, health, happiness, energy, and combat level.
  * It includes methods to perform actions like attack, feed, showInfo, train, sleep, play, and a unique behavior of flying.
  * Author: Annabelle Phan 
- * Date: December 9, 2025
+ * Date: December 15, 2025
  */
 
 public class Charizard implements Pokemon {
@@ -13,7 +13,13 @@ private int health;
 private int happiness; 
 private int energy;
 private int combatLevel;
-// Constructor: Construct Charizard copying data into the instance variables 
+/* Constructor: Construct Charizard copying data into the instance variables 
+ * @param theHealth allows user to choose starting health 
+ * @param theHappiness allows user to choose starting happiness
+ * @param theEnergy allows user to choose starting energy
+ * @param theCombatLevel allows user to choose starting combat level 
+ * @param theAge allows user to choose starting age
+*/
 public Charizard(int theHealth, int theHappiness, int theEnergy, int theCombatLevel, int theAge){
     health = theHealth;
     happiness = theHappiness;
@@ -29,7 +35,7 @@ public Charizard() {
     age = 70;
 
 }
-//Interface methods
+/*Interface methods */
 @Override
 public void attack(){
     System.out.println("Charizard uses Flamethrower!");
@@ -85,51 +91,70 @@ public void uniqueBehavior() {
     age += 1;     
 }
 
-// Getter and Setter for 'age'
+/* Getter and Setter for 'age'*/
 @Override
 public int getAge() {
     return age;
 }
-
+/*
+* Setter for 'age'
+* @param int age sets the age for charizard
+*/
 @Override
 public void setAge(int age) {
     this.age = age;
 }
 @Override
-// Getter and Setter for 'health'
+/*  Getter 'health'*/
 public int getHealth() {
     return health;
 }
+/* 
+* Setter 'health'
+* @param int health sets the health for charizard
+*/
 @Override
 public void setHealth(int health) {
     this.health = health;
 }
 
-// Getter and Setter for 'happiness'
+/* Getter for 'happiness'*/
 @Override
 public int getHappiness() {
     return happiness;
 }
+/*
+* Setter for 'happiness'
+* @param int happiness sets the happiness for charizard
+*/
 @Override
 public void setHappiness(int happiness) {
     this.happiness = happiness;
 }
 
-// Getter and Setter for 'energy'
+/* Getter and Setter for 'energy'*/
 @Override
 public int getEnergy() {
     return energy;
 }
+/*
+* Setter for 'energy'
+* @param int energy sets the energy for charizard
+*/
 @Override
 public void setEnergy(int energy) {
     this.energy = energy;
 }
 
-// Getter and Setter for 'combatLevel'
+/* Getter and Setter for 'combatLevel'*/
 @Override
 public int getCombatLvl() {
     return combatLevel;
 }
+/* 
+* Setter for 'combatLevel'
+* @param int combatLevel sets the combat level for charizard
+*/
 @Override
 public void setCombatLvl(int combatLevel) {
     this.combatLevel = combatLevel;

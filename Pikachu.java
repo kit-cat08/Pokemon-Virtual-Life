@@ -1,7 +1,7 @@
-/*
+/**
 This class represents a Pikachu and has various attributes and methods to interact with it. It implements the Pokemon interface.
 @author Cathy Vo
-@version 12/9/2025
+@version 12/15/2025
  */
 public class Pikachu implements Pokemon{
     private int health;
@@ -11,6 +11,14 @@ public class Pikachu implements Pokemon{
     private int combatLvl;
     private final String type = "Electric";
 
+    /*
+    This is the constructor for Pikachu.
+    @param theHealth The health of the Pikachu.
+    @param theEnergy The energy of the Pikachu.
+    @param theHappiness The happiness of the Pikachu.
+    @param theAge The age of the Pikachu.
+    @param theCombatLvl The combat level of the Pikachu.
+     */
     public Pikachu(int theHealth, int theEnergy, int theHappiness, int theAge, int theCombatLvl) {
         health = theHealth;
         energy = theEnergy;
@@ -18,6 +26,9 @@ public class Pikachu implements Pokemon{
         age = theAge;
         combatLvl = theCombatLvl;
     }
+    /*
+    This is the default constructor for Pikachu.
+     */
     public Pikachu() {
         health = 60;
         energy = 60;
@@ -34,6 +45,7 @@ public class Pikachu implements Pokemon{
     }
     /*
     This method sets the health of the Pikachu.
+    @param health The health value to set for the Pikachu.
      */
     @Override
     public void setHealth(int health) {
@@ -48,6 +60,7 @@ public class Pikachu implements Pokemon{
     }
     /*
     This method sets the happiness of the Pikachu.
+    @param happiness The happiness value to set for the Pikachu.
      */
     @Override
     public void setHappiness(int happiness) {
@@ -62,6 +75,7 @@ public class Pikachu implements Pokemon{
     }
     /*
     This method sets the energy of the Pikachu.
+    @param energy The energy value to set for the Pikachu.
      */
     @Override
     public void setEnergy(int energy) {
@@ -76,6 +90,7 @@ public class Pikachu implements Pokemon{
     }
     /*
     This method sets the age of the Pikachu.
+    @param age The age value to set for the Pikachu.
     */
    @Override
     public void setAge(int age) {
@@ -90,6 +105,7 @@ public class Pikachu implements Pokemon{
     }
     /*
     This method sets the combat level of the Pikachu.
+    @param combatLvl The combat level value to set for the Pikachu.
      */
     @Override
     public void setCombatLvl(int combatLvl) {

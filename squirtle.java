@@ -1,7 +1,7 @@
-/*
+/**
 This class represents a Squirtle and implements the Pokemon interface to use various methods.
 @author Aidan Manzanares
-@version 12/9/2025
+@version 12/15/2025
  */
 
 
@@ -15,7 +15,13 @@ public class squirtle implements Pokemon {
 
 
     /*
-    Constructors for Squirtle.
+    Constructor for Squirtle.
+    @param theHealth The health of the Pokemon 
+    @param theEnergy The energy of the Pokemon
+    @param theHappiness The Pokemon's happiness
+    @param theAge The age of the Pokemon
+    @param theCombatLvl The Pokemon's combat level
+    @author Aidan Manzanares
     */
     public squirtle(int theHealth, int theEnergy, int theHappiness, int theAge, int theCombatLvl) {
         health = theHealth;
@@ -24,6 +30,13 @@ public class squirtle implements Pokemon {
         age = theAge;
         combatLvl = theCombatLvl;
     }
+
+ /*
+    Overloaded constructor for Squirtle with predefined values for variables
+    @author Aidan Manzanares
+    */
+
+
     public squirtle() {
         health = 50;
         energy = 50;
@@ -34,6 +47,7 @@ public class squirtle implements Pokemon {
 
     /*
     Simulates Squirtle attacking and calculates damage based on level.
+    @author Aidan Manzanares
     */
     @Override
     public void attack() {
@@ -46,7 +60,7 @@ public class squirtle implements Pokemon {
 
     /*
     Method for feeding Squirtle and increasing health and happiness.
-    
+    @author Aidan Manzanares
     */
     @Override
     public void feed() {
@@ -56,6 +70,7 @@ public class squirtle implements Pokemon {
     }
     /*
     This method displays the current information about the Squirtle.
+    @author Aidan Manzanares
      */
     @Override
     public void showInfo() {
@@ -69,10 +84,11 @@ public class squirtle implements Pokemon {
     }
     /*
     This method simulates training Squirtle, increasing its combat level and reducing its energy and happiness.
+    @author Aidan Manzanares
      */
     @Override
     public void train() {
-        System.out.println("Pikachu is training!");
+        System.out.println("Squirtle is training!");
         combatLvl += 5;
         energy -= 15;
         happiness -= 5;
@@ -80,80 +96,139 @@ public class squirtle implements Pokemon {
     }
     /*
     This method simulates Squirtle sleeping, restoring energy and happiness.
+    @author Aidan Manzanares
      */
     @Override
     public void sleep(){
-        System.out.println("Pikachu is sleeping!");
+        System.out.println("Squirtle is sleeping!");
         energy += 20;
         happiness += 10;
 
     }
     /*
-    This method simulates Squitle playing, increasing its happiness and reducing its energy. f
+    This method simulates Squitle playing, increasing its happiness and reducing its energy.
+    @author Aidan Manzanares
      */
     @Override
     public void play(){
-        System.out.println("Pikachu is playing!");
+        System.out.println("Squirtle is playing!");
         happiness += 15;
         energy -= 10;
         
     }
 
-        /*
-        Squirtle's unique behavior: Using Water Gun attack. Calculates damage based on combat level.
-        */
-        @Override
-        public void uniqueBehavior(){
-            int damage = 40 * ((combatLvl + 1)/ 10);
-            System.out.println("Squirtle used Water Gun! It dealt " + damage + " damage!"); 
-        }
+    /*
+    Squirtle's unique behavior: Using Water Gun attack. Calculates damage based on combat level.
+    @author Aidan Manzanares
+    */
+     @Override
+     public void uniqueBehavior(){
+        int damage = 40 * ((combatLvl / 10) + 1);
+        System.out.println("Squirtle used Water Gun! It dealt " + damage + " damage!"); 
+    }
     
 
 
-    /*
-    Getter and setter methods.
+    
+    /* Getter method for health variable.
+    @return health.
+    @author Aidan Manzanares
     */
+
     @Override
     public int getHealth() {
         return health;
     }
+
+    /* Setter method for health variable.
+    @param health. New health
+    @author Aidan Manzanares
+    */
+
+
     @Override
     public void setHealth(int health) {
         this.health = health;
     }
+
+  /* Getter method for energy variable.
+    @return energy
+    @author Aidan Manzanares
+    */
+
     @Override
     public int getEnergy() {
         return energy;
     }
+
+  /* Setter method for energy variable.
+    @param energy New energy
+    @author Aidan Manzanares
+    */
+
     @Override
     public void setEnergy(int energy) {
         this.energy = energy;
     }
+
+  /* Getter method for happiness variable.
+    @return happiness
+    @author Aidan Manzanares
+    */
 
     @Override
     public int getHappiness() {
         return happiness;
     }
 
+
+  /* Setter method for energy variable.
+    @param happiness New happiness
+    @author Aidan Manzanares
+    */
+
+
 @Override
     public void setHappiness(int happiness) {
         this.happiness = happiness;
     }
+
+  /* Getter method for age variable.
+    @return age
+    @author Aidan Manzanares
+    */
 
     @Override
     public int getAge() {
         return age;
     }
 
+  /* Setter method for age variable.
+    @param age New age
+    @author Aidan Manzanares
+    */
+
 @Override
     public void setAge(int age) {
         this.age = age;
     }
 
+
+  /* Getter method for combatLvl variable.
+    @return combatLvl
+    @author Aidan Manzanares
+    */
+
+
 @Override
     public int getCombatLvl() {
         return combatLvl;
     }
+
+  /* Setter method for combatLvl variable.
+    @param combatLvl New combatLvl
+    @author Aidan Manzanares
+    */
 
 @Override
     public void setCombatLvl(int combatLvl) {

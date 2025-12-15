@@ -22,3 +22,4 @@ The user will begin to run the program and choose their type of Pokémon pet the
 * Technical Writer: Annabelle Phan
 
 # Bugs & Future Improvements
+* For future improvements we could allow the Pokemon's to evolve and let the pokemon age up
